@@ -25,3 +25,9 @@ console.log('Finish writing file'); // This will be execute before write file.
 fs.writeFileSync('file3.txt', 'This is third file written in Sync');
 
 console.log('Finish writing file'); // This will be execute after write file.
+
+// Add/Update File Content:
+fs.appendFileSync('file3.txt', 'The data of file 3 has been changed');
+
+// Delete File:
+fs.unlinkSync('file3.txt');
